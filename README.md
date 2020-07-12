@@ -26,7 +26,9 @@ ruby bin/run product_type product_option
 
 ## Example Input / Output
 
-- Example: Options for tshirt `product_type`
+Example 1
+
+- Options for tshirt `product_type`
 
 ```
 > ruby bin/run tshirt
@@ -35,7 +37,7 @@ Color: red, blue, green
 Size: small, medium, large, extra-large, 2x-large
 ```
 
-- Example: Options for tshirt `product_type` & female gender `product_option`
+- Options for tshirt `product_type` & female gender `product_option`
 
 ```
 > ruby bin/run tshirt female
@@ -43,14 +45,16 @@ Color: red, blue, green
 Size: small, medium, large, extra-large, 2x-large
 ```
 
-- Example: Options for tshirt `product_type` & female gender `product_option` & red color `product_option`
+- Options for tshirt `product_type` & female gender `product_option` & red color `product_option`
 
 ```
 > ruby bin/run tshirt female red
 Size: small, medium, large, extra-large, 2x-large
 ```
 
-- Example: Options for sticker `product_type`
+Example 2
+
+- Options for sticker `product_type`
 
 ```
 > ruby bin/run sticker
@@ -58,7 +62,7 @@ Size: x-small, small, medium, large, x-large
 Style: matte, glossy
 ```
 
-- Example: Options for sticker `product_type` & small size `product_option`
+- Options for sticker `product_type` & small size `product_option`
 
 ```
 > ruby bin/run sticker small
