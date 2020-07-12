@@ -21,14 +21,14 @@ class CommandLineInterface
   # Method displays available product options to end user
   def display_options(options_hash)
     # Guard Clause: Check if no product options are available
-    unless options_hash.length.positive?
+    if options_hash.empty?
       puts 'No options available for specified Product Type / Option(s)'
       return
     end
 
     options_hash.each do |key, value|
       # Guard Clause: Check if set value is empty
-      next unless value.length.positive?
+      next if value.empty?
 
       puts "#{key.capitalize}: #{value.to_a.join(', ')}"
     end
