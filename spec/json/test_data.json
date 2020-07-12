@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "product_type": "poster",
+    "options": {
+      "genre": "fantasy",
+      "size": "small"
+    }
+  },
+  {
+    "id": 2,
+    "product_type": "poster",
+    "options": {
+      "genre": "action",
+      "size": "medium"
+    }
+  },
+  {
+    "id": 3,
+    "product_type": "poster",
+    "options": {
+      "genre": "adventure",
+      "size": "large"
+    }
+  },
+  {
+    "id": 4,
+    "product_type": "poster",
+    "options": {
+      "genre": "video-game",
+      "size": "extra-large"
+    }
+  },
+  {
+    "id": 5,
+    "product_type": "poster",
+    "options": {
+      "genre": "movie",
+      "size": "2x-large"
+    }
+  }
+]
