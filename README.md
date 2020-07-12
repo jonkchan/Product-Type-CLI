@@ -24,6 +24,8 @@ Notes:
 ruby bin/run product_type product_option
 ```
 
+To update products JSON data, provide new JSON file under `./json/` directory
+
 ## Example Input / Output
 
 Example 1
