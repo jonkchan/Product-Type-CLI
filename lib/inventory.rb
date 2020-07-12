@@ -16,7 +16,7 @@ class Inventory
       next if product.type != product_type
 
       # Guard Clause: Check if product options matches specified product_options
-      next unless product_options_matches?(product, product_options)
+      next unless product.match_options?(product_options)
 
       product.options.each do |key, value|
         # Create product options hashmap: <product_option:available options>
@@ -27,16 +27,5 @@ class Inventory
       end
     end
     output
-  end
-
-  private
-
-  # Helper function compares if product.options matches specified product_options
-  def product_options_matches?(product, product_options)
-    is_applicable = true
-    product_options.each do |option|
-      is_applicable = false unless product.options.value?(option.to_s)
-    end
-    is_applicable
   end
 end

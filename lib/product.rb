@@ -13,4 +13,12 @@ class Product
     json.map { |product_hash| Product.new(product_hash) }
   end
 
+  # Helper function compares if product.options matches specified product_options
+  def match_options?(product_options)
+    is_applicable = true
+    product_options.each do |option|
+      is_applicable = false unless options.value?(option.to_s)
+    end
+    is_applicable
+  end
 end
