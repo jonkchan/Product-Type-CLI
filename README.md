@@ -26,7 +26,7 @@ ruby bin/run product_type product_option
 
 ## Example Input / Output
 
-- Product Type Only
+- Example: Options for tshirt `product_type`
 
 ```
 > ruby bin/run tshirt
@@ -35,12 +35,28 @@ Color: red, blue, green
 Size: small, medium, large, extra-large, 2x-large
 ```
 
-- Product Type & Product Option
+- Example: Options for tshirt `product_type` & female gender `product_option`
 
 ```
 > ruby bin/run tshirt female
 Color: red, blue, green
 Size: small, medium, large, extra-large, 2x-large
+```
+
+- Example: Options for sticker `product_type`
+
+```
+> ruby bin/run sticker
+Size: x-small, small, medium, large, x-large
+Style: matte, glossy
+```
+
+- Example: Options for sticker `product_type` & small size `product_option`
+
+```
+> ruby bin/run sticker small
+Size: x-small, small, medium, large, x-large
+Style: matte, glossy
 ```
 
 # Testing
