@@ -43,6 +43,13 @@ Color: red, blue, green
 Size: small, medium, large, extra-large, 2x-large
 ```
 
+- Example: Options for tshirt `product_type` & female gender `product_option` & red color `product_option`
+
+```
+> ruby bin/run tshirt female red
+Size: small, medium, large, extra-large, 2x-large
+```
+
 - Example: Options for sticker `product_type`
 
 ```
