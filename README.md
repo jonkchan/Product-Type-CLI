@@ -55,8 +55,7 @@ Style: matte, glossy
 
 ```
 > ruby bin/run sticker small
-Size: x-small, small, medium, large, x-large
-Style: matte, glossy
+Style: matte
 ```
 
 # Testing
