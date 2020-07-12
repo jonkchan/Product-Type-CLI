@@ -17,7 +17,7 @@ class Product
   def match_options?(product_options)
     is_applicable = true
     product_options.each do |option|
-      is_applicable = false unless options.value?(option.to_s)
+      is_applicable = false unless options.value?(option)
     end
     is_applicable
   end
