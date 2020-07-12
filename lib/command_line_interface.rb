@@ -28,9 +28,7 @@ class CommandLineInterface
 
     options_hash.each do |key, value|
       # Guard Clause: Check if set value is empty
-      next if value.empty?
-
-      puts "#{key.capitalize}: #{value.to_a.join(', ')}"
+      puts "#{key.capitalize}: #{value.to_a.join(', ')}" unless value.empty?
     end
   end
 end
