@@ -15,7 +15,7 @@ class Inventory
       # Guard Clause: Check if product type matches
       next if product.type != product_type
 
-      # Guard Clause: Check if product options matches specified product_options
+      # Guard Clause: Check if product.options matches product_options argument
       next unless product.match_options?(product_options)
 
       product.options.each do |key, value|
