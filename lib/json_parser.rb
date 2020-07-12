@@ -8,7 +8,7 @@ class JSONParser
     json = File.read(file_location)
 
     # Guard Clause: Check if json file does not contain data
-    raise ArgumentError, 'No data available in JSON file' unless json.length.positive?
+    raise ArgumentError, 'No data available in JSON file' if json.empty?
 
     JSON.parse(json)
   end
