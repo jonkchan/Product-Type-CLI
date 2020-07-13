@@ -71,6 +71,15 @@ Style: matte, glossy
 Style: matte
 ```
 
+Example 3
+
+- No options for invalid `product_type`
+
+```
+> ruby bin/run teeshirt
+No options available for specified Product Type / Option(s)
+```
+
 # Testing
 
 Run the following command within the terminal to start automated testing
