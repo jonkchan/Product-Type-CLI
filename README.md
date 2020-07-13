@@ -28,7 +28,7 @@ To update the products JSON data, provide the new JSON file under the `./json/` 
 
 ## Example Input / Output
 
-Example 1
+#### Example 1
 
 - Options for tshirt `product_type`
 
@@ -54,7 +54,7 @@ Size: small, medium, large, extra-large, 2x-large
 Size: small, medium, large, extra-large, 2x-large
 ```
 
-Example 2
+#### Example 2
 
 - Options for sticker `product_type`
 
@@ -71,7 +71,7 @@ Style: matte, glossy
 Style: matte
 ```
 
-Example 3
+#### Example 3
 
 - No options for invalid `product_type`
 
