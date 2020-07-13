@@ -22,8 +22,9 @@ class CommandLineInterface
   def display_options(options_hash)
     # Guard Clause: Check if no product options are available
     if options_hash.empty?
-      puts 'No options available for specified Product Type / Option(s)'
-      return
+      message = 'No options available for specified Product Type / Option(s)'
+      puts message
+      return message
     end
 
     options_hash.each do |key, value|
