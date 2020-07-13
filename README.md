@@ -80,7 +80,7 @@ Style: matte
 No options available for specified Product Type / Option(s)
 ```
 
-# Testing
+## Testing
 
 Run the following command within the terminal to start automated testing
 
