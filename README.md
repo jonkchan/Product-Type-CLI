@@ -18,10 +18,10 @@ The results of the CLI will then be displayed on the terminal.
 Notes:
 
 - `product_type` argument is required
-- `product_option` argument is optional
+- `product_option` arguments are optional
 
 ```bash
-ruby bin/run product_type product_option
+ruby bin/run product_type [product_option1 product_option2 product_option3]
 ```
 
 To update the products JSON data, provide the new JSON file under the `./json/` directory and name the file `products.json`.
