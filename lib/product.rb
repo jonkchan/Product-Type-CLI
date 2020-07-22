@@ -1,11 +1,12 @@
 # Product Class takes in id, product_type, and options from JSON
 class Product
-  attr_accessor :id, :type, :options
+  attr_accessor :id, :type, :options, :hierarchy
 
   def initialize(product_hash)
     @id = product_hash['id']
     @type = product_hash['product_type']
     @options = product_hash['options']
+    @hierarchy = product_hash['options'].map { |key, _value| key }.compact
   end
 
   # Method returns products object array from JSON data
@@ -15,10 +16,10 @@ class Product
 
   # Helper function compares if product.options matches specified product_options
   def match_options?(product_options)
-    is_applicable = true
-    product_options.each do |option|
-      is_applicable = false unless options.value?(option)
+    product_options.each_with_index do |product_option, idx|
+      category = hierarchy[idx]
+      return false unless options[category] == product_option
     end
-    is_applicable
+    true
   end
 end

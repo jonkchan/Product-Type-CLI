@@ -18,12 +18,11 @@ class Inventory
       # Guard Clause: Check if product.options matches product_options argument
       next unless product.match_options?(product_options)
 
-      product.options.each do |key, value|
+      product.hierarchy[product_options.length..].each do |value|
         # Create product options hashmap: <product_option:available options>
-        output.store(key, Set.new) unless output.key?(key)
+        output.store(value, Set.new) unless output.key?(value)
 
-        # Append option unless option is already specified in product_options argument
-        output[key] << value unless product_options.include?(value)
+        output[value] << product.options[value]
       end
     end
     output

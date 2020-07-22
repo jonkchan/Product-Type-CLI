@@ -3,7 +3,7 @@
 require_relative '../lib/command_line_interface.rb'
 
 product_type = ARGV[0]
-product_options = ARGV.length > 1 ? ARGV[1..ARGV.length - 1] : []
+product_options = ARGV.length > 1 ? ARGV[1..] : []
 
 # CommandLineInterface.new.run(product_type, ARGV)
 CommandLineInterface.new.run(product_type, product_options)

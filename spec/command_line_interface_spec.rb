@@ -37,7 +37,6 @@ describe CommandLineInterface do
     it 'returns list of options for valid product type with 1 product option' do
       results = @cli.run('tshirt', ['male'])
 
-      expect(results['gender'].empty?).to eq(true)
       expect(results['color']).to eq(Set['red', 'green', 'navy', 'white', 'black'])
       expect(results['size']).to eq(Set['small', 'medium', 'large', 'extra-large', '2x-large'])
     end
@@ -45,8 +44,6 @@ describe CommandLineInterface do
     it 'returns list of options for valid product type with 2 product options' do
       results = @cli.run('tshirt', ['male', 'black'])
 
-      expect(results['gender'].empty?).to eq(true)
-      expect(results['color'].empty?).to eq(true)
       expect(results['size']).to eq(Set['small', 'medium', 'large', 'extra-large', '2x-large'])
     end
   end
