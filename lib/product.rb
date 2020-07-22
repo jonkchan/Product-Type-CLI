@@ -17,8 +17,8 @@ class Product
   # Helper function compares if product.options matches specified product_options
   def match_options?(product_options)
     product_options.each_with_index do |product_option, idx|
-      category = hierarchy[idx]
-      return false unless options[category] == product_option
+      type = hierarchy[idx]
+      return false unless options[type] == product_option
     end
     true
   end
